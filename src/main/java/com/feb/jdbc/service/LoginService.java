@@ -27,9 +27,4 @@ public class LoginService {
 	public int join(HashMap<String, String> params) {
 		return loginDao.join(params);
 	}
-	
-	
-	
-	
-	
 }

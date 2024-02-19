@@ -16,6 +16,10 @@ import com.feb.jdbc.service.LoginService;
 @Controller
 public class LoginController {
 
+	public LoginController() {
+		System.out.println("1111111111111111");
+	}
+	
 	@Autowired
 	private LoginService loginService;
 
