@@ -12,5 +12,15 @@ PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
 		from lecture.member
 		where member_id = #{memberId};
 	</select>
+	
+	<!-- public int join(HashMap<String, String> params); -->
+	<insert id="join" parameterType="java.util.HashMap">
+		INSERT INTO lecture.member(member_id, passwd, email)
+		VALUES(
+		#{memberId},
+		#{passWd},
+		#{email},
+		)
+	</insert>
 
 </mapper>
